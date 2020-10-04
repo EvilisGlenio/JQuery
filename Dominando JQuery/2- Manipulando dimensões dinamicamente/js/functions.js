@@ -1,17 +1,22 @@
 $(function(){
+    //Pegando a largura
+    $('.box').width();
+
+    //Setando a largura
+    $('.box').css('width','500');
     
-    //Ao envéz de fixar chamando sempre o mesmo elemento
-    //Podemos chamar sempre o mesmo objeto, sem está criando várias instâncias dele.
-    var el = $('div.box');
+    //Mostra a largura DESCONTANDO o padding e IGNORANDO a margin.
+    console.log("Width: "+$('.box').width());
+    //Mostra a largura total INCLUINDO o padding e IGNORANDO a margin.
+    console.log("innerWidth: "+$('.box').innerWidth());
+    //Mostra a largura total INCLUINDO o padding e a margin(Caso o parâmetro seja 'true').
+    console.log("outerWidth: "+$('.box').outerWidth(true));
 
-    setTimeout(function(){
-        //Como pode ver, estou sempre chamando o mesmo objeto, apartir de qualquer lugar do código.
-        el.css('background-color','yellow');
+     //Mostra a altura DESCONTANDO o padding e IGNORANDO a margin.
+     console.log("Height: "+$('.box').height());
+     //Mostra a altura total INCLUINDO o padding e IGNORANDO a margin.
+     console.log("innerHeight: "+$('.box').innerHeight());
+     //Mostra a altura total INCLUINDO o padding e a margin(Caso o parâmetro seja 'true').
+     console.log("outerHeight: "+$('.box').outerHeight(true));
 
-        function teste(){
-            el.css('color','red');
-        }
-
-        teste();
-        },1000);
 });
