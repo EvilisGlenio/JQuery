@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.bloco-1,.bloco-2{
+    display: inline-block;
+    width: 200px;
+    padding-top: 200px;
+    margin: 50px;
+    background-color: #cccccc;
+    border: 2px solid gray;
+}
+
+textarea{
+    width: 50%;
+    height: 50px;
+    resize: none;
+}
+
+select{
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
