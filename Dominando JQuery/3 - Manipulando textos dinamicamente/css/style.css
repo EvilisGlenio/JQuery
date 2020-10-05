@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    text-align: center;
+}
+
+.box{
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: #ccc;
+}
+.teste1{
+    color: yellow;
+    font-size: 18px;
+}
+.teste2{
+    color: red;
+}
