@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    text-align: center;
+}
+
+form{
+    padding: 50px;
+}
+
+input[type=text]{
+    margin: 0 10px;
+    padding-left: 10px;
+}
+
+input[type=submit]{
+    padding: 2px 5px;
+}
