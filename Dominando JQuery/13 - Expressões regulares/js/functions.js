@@ -40,6 +40,22 @@ $(function(){
     }
 
 
+    $('form#form1').click(function(){
+
+        var nome = $('input[name=nome]').val();
+        var telefone = $('input[name=tel]').val();
+        var email = $('input[name=email]').val();
+
+        var amount = nome.split(' ').lenght;
+        
+        //Se a quantidade strings separadas por um espaço for maior do que 2 ...
+    
+
+        return false;
+        //Se chegou aqui é pq ta Okay.
+    });
+
+
     
 
 });
