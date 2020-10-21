@@ -40,16 +40,25 @@ $(function(){
     }
 
 
-    $('form#form1').click(function(){
+    $('#form1').click(function(){
 
         var nome = $('input[name=nome]').val();
         var telefone = $('input[name=tel]').val();
         var email = $('input[name=email]').val();
-
-        var amount = nome.split(' ').lenght;
         
+        //Pega a quantidade de strings separadas por um espaço
+        var amount = nome.split(' ').length;
+        //Para pegar apenas os índicies(Palavras deparadas por um espaço)
+        var splitStr = nome.split(' ');
         //Se a quantidade strings separadas por um espaço for maior do que 2 ...
-    
+        if(amount >= 2){
+            for(var i = 0; i < amount; i++){
+                console.log(splitStr[i]);
+            }
+        }else{
+            console.log('inválido');
+            return false;
+        }
 
         return false;
         //Se chegou aqui é pq ta Okay.
