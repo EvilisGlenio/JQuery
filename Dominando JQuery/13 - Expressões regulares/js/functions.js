@@ -40,7 +40,8 @@ $(function(){
     }
 
 
-    $('#form1').click(function(){
+    $('#form1').submit(function(e){
+        e.preventDefault();
 
         var nome = $('input[name=nome]').val();
         var telefone = $('input[name=tel]').val();
@@ -53,18 +54,25 @@ $(function(){
         //Se a quantidade strings separadas por um espaço for maior do que 2 ...
         if(amount >= 2){
             for(var i = 0; i < amount; i++){
-                console.log(splitStr[i]);
+                //Se em cada palavra a primeira letra for Maiuscula e as demais minusculas ... 
+                if(splitStr[i].match(/^[A-Z]{1}[a-z]{1,}$/)){
+                    
+                }else{
+                    aplicarCampoInvalido($('input[name=nome]'));
+                }
             }
         }else{
-            console.log('inválido');
+            aplicarCampoInvalido($('input[name=nome]'));
             return false;
         }
 
-        return false;
         //Se chegou aqui é pq ta Okay.
     });
 
-
+    function aplicarCampoInvalido(el){
+        el.css('border','2px solid red');
+        el.data('invalido','true');
+    }
     
 
 });
