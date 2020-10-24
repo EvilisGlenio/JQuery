@@ -18,8 +18,8 @@ $(function(){
                     }
                 },
                 'success':function(data){
-                    $('#container').html(data);
-                    //$(data).appendTo('#container').fadeIn();
+                    //$('#container').html(data);
+                    $(data).appendTo('#container').fadeIn();
                 }
 
             })
