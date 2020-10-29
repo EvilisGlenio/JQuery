@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    /*jQuery Social Media*/
+html, body{
+    padding: 30px 2%;
+    height: 100%;
+    text-align: center;
+}
+
+article{
+    width: 100%;
+    padding: 30px;
+}
+#social-share{
+    width: 100%;
+}
+
+    /*jQuery form Mask*/
+form{
+    width: 300px;
+    height: 500px;
+    border: 2px solid #ccc;
+    padding: 20px 10px;
+    margin: 0 auto;
+}
+form input{
+    margin: 20px 0;
+}
+
+    /*jQuery fancybox*/
+
+a > img{
+    width: 200px;
+}
+
+
